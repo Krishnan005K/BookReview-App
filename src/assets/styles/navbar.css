@@ -1,0 +1,32 @@
+nav{
+    background-color: #685358;
+     height:auto;
+     width: auto;
+     justify-content: space-between;
+ }
+ /* nav{
+     background-color: black;
+     height: 500px;
+     width:200px;
+ } */
+ ul{
+     list-style-type: none;
+     /* display: inline-block; */
+ }
+ li{
+     display: inline-block;
+     /* display: block; */
+     padding: 10px;
+ }
+ .navlink{
+     
+     color: aqua;
+ }
+ li:hover:not(.active){
+     background-color: yellow;
+     
+ }
+ .active
+ {
+     background-color: azure;
+ }
