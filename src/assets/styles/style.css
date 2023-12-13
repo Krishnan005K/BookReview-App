@@ -24,13 +24,7 @@
   ul {
     padding-left: 0;
     margin-bottom: 0; }
-  
-  a:hover {
-    text-decoration: none; }
-  
-  :focus {
-    outline: none; }
-  
+
   .wrapper {
     min-height: 100vh;
     background-size: cover;
@@ -59,12 +53,6 @@
       text-align: center;
       margin-bottom: 28px; }
   
-  .form-group {
-    display: flex; }
-    .form-group input {
-      width: 50%; }
-      .form-group input:first-child {
-        margin-right: 25px; }
   
   .form-wrapper {
     position: relative; }

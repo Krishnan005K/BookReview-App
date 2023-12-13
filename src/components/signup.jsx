@@ -35,7 +35,7 @@ function Register() {
               className="form-control"
              
             />
-            <i className="zmdi zmdi-account" />
+           
           </div>
           <div className="form-wrapper">
             <input
@@ -44,7 +44,7 @@ function Register() {
               className="form-control"
               
             />
-            <i className="zmdi zmdi-email" />
+           
           </div>
           <div className="form-wrapper">
             <select name="" id="" className="form-control" >
@@ -53,7 +53,7 @@ function Register() {
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
-            <i className="zmdi zmdi-caret-down" style={{ fontSize: 17 }} />
+           
           </div>
           <div className="form-wrapper">
             <input
@@ -62,7 +62,7 @@ function Register() {
               className="form-control"
               
             />
-            <i className="zmdi zmdi-lock" />
+            
           </div>
           <div className="form-wrapper">
             <input
@@ -71,7 +71,7 @@ function Register() {
               className="form-control"
              
             />
-            <i className="zmdi zmdi-lock" />
+            
           </div>
           <div>
             <p>Already have account <Link to='/login' className='link' >Login</Link></p>
