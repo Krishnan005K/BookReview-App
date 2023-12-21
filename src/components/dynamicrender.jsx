@@ -15,8 +15,8 @@ function Dynamic()
             }}>
                 <h1>Sucessfully Loggedin</h1>
                 <br />
-                <button>
-                <Link to='/'> Go to HOME--</Link></button>
+                <button className="glow-on-hover">
+                <Link to='/'> Click to Continue--</Link></button>
             </div>
         )
     }

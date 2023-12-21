@@ -4,7 +4,9 @@ import '../assets/styles/regisucess.css'
 import {Link} from 'react-router-dom'
 const RegistrationSuccess = () => {
   return (
-    <body>
+    <div className="wrapper">
+
+    
     <div className="Scriptcontent">
       <div id="card" className="animated fadeIn">
         <div id="upper-side">
@@ -19,14 +21,14 @@ const RegistrationSuccess = () => {
             <br/>
             Login now
           </p>
-          <buttton className='regissucess'>
+          <buttton className='glow-on-hover'>
          <Link to='/login' className="">Login</Link>
          </buttton>
          
         </div>
       </div>
     </div>
-    </body>
+    </div>
   );
 };
 

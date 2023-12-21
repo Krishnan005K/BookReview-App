@@ -3,6 +3,7 @@ import photo from '../assets/images/registration-form-1.jpg'
 import '../assets/styles/style.css'
 
 
+
 function Login() {
   return (
 
@@ -38,11 +39,11 @@ function Login() {
           <div>
             <p>Don't have account <Link to='/register' className='link'>Signup</Link></p>
           </div>
-          <button >
-            <Link to='/loginsucess' >Login
-            </Link>
 
-          </button>
+          <button className="glow-on-hover"><Link to='/loginsucess'  >Login
+          </Link></button>
+
+
         </form>
       </div>
     </div>
@@ -50,5 +51,6 @@ function Login() {
 
   );
 }
+
 
 export default Login;
