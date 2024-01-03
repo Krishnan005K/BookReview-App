@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "firstName": "krishnan",
+      "lastName": "K",
+      "username": "kk",
+      "email": "krish@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "gender": "male",
+      "id": 1
+    }
+  ]
+}

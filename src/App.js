@@ -10,6 +10,7 @@ import GroupExample from './components/grid';
 import Layout from './components/grid';
 import Navbar from './components/navbar';
 import SingleCard from './components/review';
+import Register from './components/signup';
 import Slideshow from './components/slideshow';
 // import Slideshow from './components/slideshow';
 const WrappedComponentWithLoading = WithLoading(Navbar);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
     <WrappedComponentWithLoading />
+    {/* <Register/> */}
      {/* <Navbar/> */}
    {/* <Footer/>
    <Cards/> */} 

@@ -14,14 +14,14 @@ const AboutUsPage = () => {
         <img src={logo}/>
         <hr/>
 Welcome to bAb, Your Portal to the World of Books!</h2>
-<center>
-<h2 >About bAb</h2></center>
 
+<div style={{marginLeft:'-420px'}}>
 <h3 style={{}}>Fuel your Reading Journey:</h3>
-
+</div>
 <p>bAb aims to be your personal compass in the vast literary landscape. Through curated recommendations, insightful reviews, and engaging discussions, we'll help you find your next great read, whether it's a nostalgic childhood favorite or a groundbreaking new release.</p>
 
 <h3 >Ignite the Spark of Conversation:</h3>
+
 
 <p>Books are meant to be shared, analyzed, and debated. bAb provides a platform for passionate readers to dive deep into the written word, exchange perspectives, and form meaningful connections over shared literary experiences.</p>
 
