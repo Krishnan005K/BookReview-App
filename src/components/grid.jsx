@@ -56,7 +56,7 @@ const Cards = () => {
     transition: 'transform 1.3s, box-shadow 0.3s',
     transformStyle: 'preserve-3d',
     transform: hoveredCard !== null && hoveredCard !== undefined
-      ? 'rotateY(360deg)' // Flip on hover
+      ? 'rotateY(0deg)' // Flip on hover
       : 'rotateY(0deg)',
   };
 

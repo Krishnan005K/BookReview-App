@@ -7,15 +7,18 @@
  ul{
      list-style-type: none;
      /* display: inline-block; */
+     text-decoration: none;
  }
  li{
      display: inline-block;
      /* display: block; */
      padding: 10px;
+     text-decoration: none;
  }
  .navlink{
      
      color:aliceblue;
+     text-decoration: none;
  }
  li:hover{
      background-color: rgb(178, 178, 165);

@@ -9,6 +9,17 @@
       "confirmPassword": "123",
       "gender": "male",
       "id": 1
+    },
+    {
+      "firstName": "dhaya",
+      "lastName": "karan",
+      "username": "dhaya",
+      "email": "dhaya@gmail.com",
+      "password": "forgotpassword",
+      "confirmPassword": "forgotpassword",
+      "gender": "male",
+      "id": 2
     }
+    
   ]
 }

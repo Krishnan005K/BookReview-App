@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: cursive;
+  font-family:;
   color: #333;
   font-size: 13px;
   margin: 0;
@@ -15,9 +15,10 @@ input,
 textarea,
 select,
 button {
-  font-family: cursive;
+  font-family:;
   color: #333;
   font-size: 13px;
+  text-decoration: none;
 }
 
 p,
@@ -29,7 +30,8 @@ h5,
 h6,
 ul {
   margin: 0;
-  font-family:cursive;
+  font-family:;
+  text-decoration: none;
 }
 
 img {
@@ -39,6 +41,7 @@ img {
 ul {
   padding-left: 0;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -108,6 +111,7 @@ ul {
 
 .link {
   color: blue;
+  text-decoration: none;
 }
 
 select {
@@ -132,11 +136,15 @@ button {
   font-size: 15px;
   color: #fff;
   vertical-align: middle;
+  
 }
 
 a {
   text-decoration: none;
   color: #fff;
+}
+p{
+  text-decoration: none;
 }
 
 .sign {
@@ -213,4 +221,31 @@ button {
 link
 {
   text-decoration: none;
+}
+.error
+{
+  color: red;
+  position: relative;
+  top: -45px;
+}
+
+
+.search {
+  color: white;
+  width: 75%;
+ position: relative; 
+ margin-left: 175px;
+}
+
+.search{
+  color: white;
+  background-color: rgba(100, 65, 48,0.5);
+  
+}
+.search label{
+  color: white;
+}
+.search1 label
+{
+  color: white;
 }

@@ -22,7 +22,7 @@ function Navbar()
                 <h2 className="logo"><img src={logo} className="logo" /></h2>
                 <ul className="all-links">
                     <li ><Link to='/' className='navlink'>Home</Link></li>
-                    <li className="navlink"><Link to='/about'>About</Link></li>
+                    <li className='navlink'><Link to='/about'>About</Link></li>
                     <li className="loggg" ><Link to='/login' className='navlink'>&nbsp;&nbsp;Login&nbsp;&nbsp;</Link></li>
                    
                     

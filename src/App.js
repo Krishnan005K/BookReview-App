@@ -3,6 +3,7 @@ import './App.css';
 import AboutUsPage from './components/About';
 import ContactUsForm from './components/Contact';
 import Home from './components/Home';
+import SearchBooks from './components/SearchBooks';
 import WithLoading from './components/WithLoading';
 import Footer from './components/footer';
 import Cards from './components/grid';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
     <WrappedComponentWithLoading />
+    {/* <SearchBooks/> */}
     {/* <Register/> */}
      {/* <Navbar/> */}
    {/* <Footer/>

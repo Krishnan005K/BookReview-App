@@ -7,7 +7,8 @@ const AboutUsPage = () => {
     <Container style={{
         backgroundColor:'rgba(100, 65, 48,0.6)',
         color:'white',
-        width:'800px'
+        width:'800px',
+        marginTop:'55px'
     }}>
       <h2>About Us</h2>
      <br/> <h2>
