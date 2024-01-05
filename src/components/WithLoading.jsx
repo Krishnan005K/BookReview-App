@@ -26,7 +26,7 @@ const WithLoading = (WrappedComponent) => {
       // Simulate loading delay with setTimeout
       setTimeout(() => {
         this.setState({ isLoading: false });
-      }, 3000); // Adjust the delay time as needed
+      }, 500); // Adjust the delay time as needed
     }
 
     render() {

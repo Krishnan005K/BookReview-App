@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import photo from '../assets/images/registration-form-1.jpg';
 import '../assets/styles/style.css';
 
-const Register = () => {
+
+const Register = ({ history }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -16,6 +17,8 @@ const Register = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [redirectToLogin, setRedirectToLogin] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,40 +26,27 @@ const Register = () => {
     setErrors({ ...errors, [name]: '' });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm(formData);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-  
-    try {
-      // Check if the username or email already exists in the database
-      const users = await axios.get('http://localhost:3001/users');
-      const foundUser = users.data.find(
-        (user) => user.username === formData.username || user.email === formData.email
-      );
-  
-      if (foundUser) {
-        if (foundUser.username === formData.username) {
-          setErrors({ ...errors, username: 'Username already exists' });
-        }
-        if (foundUser.email === formData.email) {
-          setErrors({ ...errors, email: 'Email already exists' });
-        }
-        return;
-      }
-  
-      // If no existing user found, proceed with registration
-      const response = await axios.post('http://localhost:3001/users', formData);
-      console.log('Registration successful!', response.data);
-      // Redirect or handle success as needed
-    } catch (error) {
-      console.error('Registration failed!', error);
-      // Handle error scenarios
-    }
+
+    // Assuming the API request is a Promise (like axios returns)
+    axios.post('http://localhost:3001/users', formData)
+      .then((response) => {
+        console.log('Registration successful!', response.data);
+        setRedirectToLogin(true); // Update state to trigger redirection
+      })
+      .catch((error) => {
+        console.error('Registration failed!', error);
+      });
   };
+  if (redirectToLogin) {
+  window.location.href='/regisucess'
+  }
 
     const validateForm = (data) => {
       const errors = {};
@@ -81,7 +71,7 @@ const Register = () => {
         errors.password = 'Password is required';
       } else if (!/(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(data.password)) {
         errors.password =
-          'Password must be at least 8 characters long and include one uppercase letter, one lowercase letter, one digit, and one special character';
+          'Enter a valid password';
       }
       if (data.password !== data.confirmPassword) {
         errors.confirmPassword = 'Passwords do not match';

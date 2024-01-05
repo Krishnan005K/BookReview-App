@@ -64,7 +64,7 @@ const Cards = () => {
     <Grid container spacing={3}>
       {cardsData.map((card, index) => (
         <Grid item xs={11} sm={6} md={4} key={index}>
-         <Link to={card.route}>
+         <Link to={card.route} className='navlink'>
           <Card
             onMouseOver={() => handleCardHover(index)}
             onMouseLeave={handleCardLeave}

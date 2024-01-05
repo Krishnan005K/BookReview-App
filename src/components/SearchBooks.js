@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/styles/style.css'
 import { Card, CardContent, CardMedia, Typography, Grid, TextField, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const BookFilters = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -67,7 +68,7 @@ const BookFilters = () => {
     <div>
       <TextField
         label="Search Books"
-        variant="outlined"
+        variant="filled"
         className='search'
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
@@ -80,14 +81,14 @@ const BookFilters = () => {
       <div>
         <TextField
           label="Filter by Author"
-          variant="outlined"
+          variant="filled"
           className='search1'
           value={authorFilter}
           onChange={handleAuthorFilterChange}
         />
         <TextField
           label="Filter by Genre"
-          variant="outlined"
+          variant="filled"
           className='search1'
           value={genreFilter}
           onChange={handleGenreFilterChange}
@@ -98,7 +99,7 @@ const BookFilters = () => {
       <Grid container spacing={3}>
         {searchResults.map((book, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
-            <Card>
+           <Link to='/review' className='navlink'> <Card>
               <CardMedia
                 component="img"
                 height="270"
@@ -114,6 +115,7 @@ const BookFilters = () => {
                 </Typography>
               </CardContent>
             </Card>
+            </Link>
           </Grid>
         ))}
       </Grid>

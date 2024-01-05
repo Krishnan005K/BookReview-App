@@ -226,7 +226,7 @@ link
 {
   color: red;
   position: relative;
-  top: -45px;
+  top: -30px;
 }
 
 
@@ -239,13 +239,16 @@ link
 
 .search{
   color: white;
-  background-color: rgba(100, 65, 48,0.5);
+  background-color: rgba(246, 241, 239, 0.5);
   
 }
-.search label{
-  color: white;
-}
-.search1 label
+
+.search :placeholder-shown
 {
   color: white;
+}
+.search value
+{
+  color: white;
+  background-color: white;
 }

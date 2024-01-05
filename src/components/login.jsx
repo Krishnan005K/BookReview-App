@@ -34,6 +34,7 @@ const Login = () => {
       if (response.data.length > 0) {
         console.log('Login successful!');
         // Redirect or handle successful login
+        window.location.href='/loginsucess'
       } else {
         console.log('Login failed! Invalid credentials.');
         // Handle invalid login
