@@ -1,5 +1,14 @@
 {
   "users": [
-   
+    {
+      "firstName": "Krishn",
+      "lastName": "K",
+      "username": "kkkk",
+      "email": "kkkk@gmail.com",
+      "password": "Krish@2005",
+      "confirmPassword": "Krish@2005",
+      "gender": "male",
+      "id": 1
+    }
   ]
 }
